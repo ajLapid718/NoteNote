@@ -1,7 +1,7 @@
 .wrapper_with_padding
   #note_show
     %h1= @note.title
-    %p= @note.content
+    %p= simple_format(@note.content)
 
     = link_to "All Notes", notes_path
 
